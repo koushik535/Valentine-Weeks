@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: 'Playfair Display', serif;
+}
+
+body {
+	background-image: url("../img/cleanBackground.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.candles img {
+	height: 500px;
+	width: 550px;
+	transition: opacity 0.8s ease;
+}
+
+.candles {
+	position: absolute;
+	top: 65%; /* Y-axis */
+	left: 20%; /* X-axis */
+	transform: translate(-50%, -50%);
+	width: 200px; /* control size */
+}
+
+.roses {
+	position: absolute;
+	top: 75%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+}
+
+.roses img {
+	width: 620px;
+	height: 320px;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+.roses img:hover {
+	transform: scale(1.08);
+}
+
+.msg {
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #f5e6d3;
+}
+
+.happy {
+	font-family: 'Playfair Display', serif;
+	font-size: 45px;
+	font-weight: 500;
+	margin: 0;
+	letter-spacing: 2px;
+}
+
+.rose {
+	font-family: 'Great Vibes', cursive;
+	font-size: clamp(60px, 10vw, 150px);
+	margin: 0;
+	line-height: 1;
+}
+
+.msg h1, .msg h2 {
+	text-shadow: 0 0 10px rgba(255, 220, 170, 0.6), 0 0 30px
+		rgba(255, 180, 120, 0.4);
+}
+
+.song {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#candle {
+	transition: opacity 0.4s ease;
+}
+
+.book-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	padding: 16px 40px;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: white;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	background: linear-gradient(135deg, #ff4e50, #ff2e63);
+	box-shadow: 0 6px 20px rgba(255, 46, 99, 0.4), inset 0 2px 4px
+		rgba(255, 255, 255, 0.3);
+	transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.book-btn:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 10px 30px rgba(255, 46, 99, 0.6), inset 0 2px 4px
+		rgba(255, 255, 255, 0.4);
+}
+
+/* Click Effect */
+.book-btn:active {
+	transform: translateY(0);
+	box-shadow: 0 4px 12px rgba(255, 46, 99, 0.5), inset 0 2px 6px
+		rgba(0, 0, 0, 0.2);
+}
+
+/* Arrow */
+.book-btn .arrow {
+	font-size: 22px;
+	transition: transform 0.3s ease;
+}
+
+.book-btn:hover .arrow {
+	transform: translateX(6px);
+}
+
+.main {
+	display: flex;
+	gap: 40px;
+	max-width: 1100px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Image container */
+#rosedimg_div {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+#rosedimg {
+	width: 100%;
+	max-width: 400px;
+	height: auto; /* prevents distortion */
+	border-radius: 20px;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Message card */
+#greet {
+	flex: 1;
+	background: rgba(245, 230, 211, 0.95);
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+#greet h2 {
+	margin-top: 0;
+	font-size: 28px;
+}
+
+#greet h3 {
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+/* ----------------- MOBILE ----------------- */
+@media ( max-width : 900px) {
+	.main {
+		flex-direction: column;
+		text-align: center;
+	}
+	#greet {
+		padding: 25px;
+	}
+	#rosedimg {
+		max-width: 320px;
+	}
+}
+
+@media ( max-width : 500px) {
+	#greet h2 {
+		font-size: 22px;
+	}
+	#greet h3 {
+		font-size: 15px;
+	}
+}
