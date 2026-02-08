@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 * {
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -10,8 +12,8 @@ html, body {
 	font-family: 'Playfair Display', serif;
 }
 
-body {
-	background-image: url("../img/cleanBackground.png");
+.roseBody{
+	background-image: url("../img/roseBackground.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -20,6 +22,231 @@ body {
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
+}
+.propBody{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.propBody::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45); /* darkness level */
+    z-index: 0;
+}
+.propBody {
+    margin: 0;
+    padding: 0;
+}
+.propfooter {
+	position: absolute;
+	top:80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #f5e6d3;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	z-index:2;
+}
+.propButton button {
+    padding: 12px 30px;
+    margin: 15px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff4e50, #ff2e63);
+    color: white;
+    transition: 0.3s ease;
+}
+.propButton{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:center;
+}
+
+.propButton button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(255, 46, 99, 0.5);
+}
+.propQuestion {
+    color: #ffffff;
+    font-size: 28px;
+    text-shadow: 0 0 15px rgba(0,0,0,0.8);
+    margin-bottom: 20px;
+}
+.typewriter-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+}
+
+/* HAPPY (smaller) */
+.happy-line {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(0,0,0,0.8);
+    
+}
+
+/* PROPOSE DAY (big script) */
+.propose-line {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(70px, 10vw, 150px);
+    color: #ffffff;
+    line-height: 1.2;              /* slightly more breathing room */
+    text-shadow: 0 0 25px rgba(0,0,0,0.9);
+    display: inline-block;
+    padding-right: 5px;            /* space for cursor */
+}
+.propose-line::after {
+    content: "";
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index:-1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+.chocBody{
+	background-image: url("../img/chocBackground.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.teddyBody{
+	background-image: url("../img/teddyBackground.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.promBody{
+	background-image: url("../img/promBackground.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.hugBody{
+	background-image: url("../img/hugBackground.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.kissBody{
+	background-image: url("../img/kissBackground.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.valBody{
+	background-image: url("../img/valBackground.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.indexMain {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.indexMain a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.indexMain a:hover {
+    transform: translateY(-8px) scale(1.03);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+.indexMain img {
+    height: 60px;
+    width: 60px;
+    margin: 15px 0;
+}
+.day {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
 .candles img {
@@ -155,8 +382,8 @@ body {
 
 #rosedimg {
 	width: 100%;
-	max-width: 400px;
-	height: auto; /* prevents distortion */
+	max-width: 750px;
+	height: 600px; 
 	border-radius: 20px;
 	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
@@ -172,12 +399,13 @@ body {
 
 #greet h2 {
 	margin-top: 0;
-	font-size: 28px;
+	font-size: 35px;
 }
 
 #greet h3 {
 	font-weight: 400;
 	line-height: 1.6;
+	font-size: 24px;
 }
 
 /* ----------------- MOBILE ----------------- */
@@ -201,4 +429,69 @@ body {
 	#greet h3 {
 		font-size: 15px;
 	}
+}
+
+
+
+
+.paBody {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, #2b0a0a, #4b0000);
+    overflow: hidden;
+}
+
+.paBody::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255,180,120,0.3), transparent 70%);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.container {
+    text-align: center;
+    color: #f5e6d3;
+    z-index: 1;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.paBody h1 {
+    font-size: clamp(32px, 5vw, 60px);
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(255, 180, 120, 0.6);
+}
+
+.paBody p {
+    margin-top: 20px;
+    font-size: clamp(16px, 2vw, 22px);
+    opacity: 0.85;
+}
+
+/* Heart animation */
+.heart {
+    font-size: 50px;
+    color: #ff4e50;
+    margin-bottom: 20px;
+    animation: pulse 1.5s infinite;
+}
+.heart img{
+	height:200px;
+	width:200px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }

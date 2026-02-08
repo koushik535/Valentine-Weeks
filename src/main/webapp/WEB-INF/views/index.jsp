@@ -4,38 +4,53 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Valentine Week</title>
+<title>Love</title>
 <link
-	href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Great+Vibes&display=swap"
+	href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
 	rel="stylesheet">
+
 </head>
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/css/style.css">
-<body>
-	<div class="candles">
-		<img id="candle"
-			src="${pageContext.request.contextPath}/img/candle_off.png" />
+<body
+	style="margin: 0; min-height: 100vh; background: linear-gradient(135deg, #ff4e50, #ff2e63); display: flex; justify-content: center; align-items: center; padding: 40px 20px; font-family: 'Playfair Display', serif;">
+	<div class="indexMain">
+
+		<a href="${pageContext.request.contextPath}/rose"> <span
+			class="day">7th</span> <img
+			src="${pageContext.request.contextPath}/img/roseicon.png"> <span
+			class="title">Rose Day</span>
+		</a> <a href="${pageContext.request.contextPath}/propose"> <span
+			class="day">8th</span> <img
+			src="${pageContext.request.contextPath}/img/propicon.png"> <span
+			class="title">Propose Day</span>
+		</a> <a href="${pageContext.request.contextPath}/chocolate"> <span
+			class="day">9th</span> <img
+			src="${pageContext.request.contextPath}/img/chocicon.png"> <span
+			class="title">Chocolate Day</span>
+		</a> <a href="${pageContext.request.contextPath}/teddy"> <span
+			class="day">10th</span> <img
+			src="${pageContext.request.contextPath}/img/teddyicon.png"> <span
+			class="title">Teddy Day</span>
+		</a> <a href="${pageContext.request.contextPath}/promise"> <span
+			class="day">11th</span> <img
+			src="${pageContext.request.contextPath}/img/promicon.png"> <span
+			class="title">Promise Day</span>
+		</a> <a href="${pageContext.request.contextPath}/hug"> <span
+			class="day">12th</span> <img
+			src="${pageContext.request.contextPath}/img/hugicon.png"> <span
+			class="title">Hug Day</span>
+		</a> <a href="${pageContext.request.contextPath}/kiss"> <span
+			class="day">13th</span> <img
+			src="${pageContext.request.contextPath}/img/kissicon.png"> <span
+			class="title">Kiss Day</span>
+		</a> <a href="${pageContext.request.contextPath}/valentine"> <span
+			class="day">14th</span> <img
+			src="${pageContext.request.contextPath}/img/valicon.png"> <span
+			class="title">Valentine's Day</span>
+		</a>
+
 	</div>
-	<div class="roses">
-		<a href="${pageContext.request.contextPath}/details"><img
-			id="rose" src="${pageContext.request.contextPath}/img/rose.png" /></a>
-	</div>
-	<div class="msg">
-		<h2 id="happyText" class="happy"></h2>
-		<h1 id="roseText" class="rose"></h1>
-	</div>
-	<div class="song">
-		<button class="book-btn" onclick="playSong()">
-			Light The Candles <span class="arrow">›</span>
-		</button>
-		<audio id="bgMusic">
-			<source src="${pageContext.request.contextPath}/audio/all_of-me.mp3"
-				type="audio/mpeg">
-		</audio>
-	</div>
-	<script>
-		const contextPath = "${pageContext.request.contextPath}";
-	</script>
-	<script src="${pageContext.request.contextPath}/js/script.js"></script>
+
 </body>
 </html>

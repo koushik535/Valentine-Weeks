@@ -10,12 +10,70 @@ public class HomeController {
 	public String index() {
 		return "index";
 	}
+	@GetMapping("/patience")
+	public String patience() {
+		return "patience";
+	}
+	@PostMapping("/invalid")
+    public String invalid() {
+    	return "redirect:/invalid";
+    }
+	@GetMapping("/invalid")
+    public String invalid2() {
+    	return "invalid";
+    }
+	
+	
 	@GetMapping("/details")
 	public String details() {
-		return "details";
+		return "rosedetails";
 	}
 	@PostMapping("/back")
 	public String back() {
 		return "redirect:/";
 	}
+	@GetMapping("/rose")
+	public String rose() {
+		return "rose";
+	}
+	
+	@GetMapping("/propose")
+    public String propose() {
+        return "propose";
+    }
+	@PostMapping("/propdetails")
+	public String propdetails() {
+		return "propdetails";
+	}
+
+    @GetMapping("/chocolate")
+    public String chocolate() {
+        return "redirect:/patience";
+    }
+
+    @GetMapping("/teddy")
+    public String teddy() {
+        return "redirect:/patience";
+    }
+
+    @GetMapping("/promise")
+    public String promise() {
+        return "redirect:/patience";
+    }
+
+    @GetMapping("/hug")
+    public String hug() {
+        return "redirect:/patience";
+    }
+
+    @GetMapping("/kiss")
+    public String kiss() {
+        return "redirect:/patience";
+    }
+
+    @GetMapping("/valentine")
+    public String valentine() {
+        return "redirect:/patience";
+    }
+    
 }
