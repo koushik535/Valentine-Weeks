@@ -14,8 +14,14 @@
 <body
 	style="margin: 0; min-height: 100vh; background: linear-gradient(135deg, #ff4e50, #ff2e63); display: flex; justify-content: center; align-items: center; padding: 40px 20px; font-family: 'Playfair Display', serif;">
 	<div class="main">
+		<audio id="bgMusic" autoplay loop>
+			<source
+				src="${pageContext.request.contextPath}/audio/thousand-years.mp3"
+				type="audio/mpeg">
+		</audio>
 		<div id="rosedimg_div">
-			<img id="rosedimg" src="${pageContext.request.contextPath}/img/chocpic.jpeg">
+			<img id="rosedimg"
+				src="${pageContext.request.contextPath}/img/chocpic.jpeg">
 		</div>
 		<div id="greet">
 			<h2>Happy Chocolate Day, my favorite dark chocolate 🍫❤️</h2>

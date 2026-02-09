@@ -242,15 +242,22 @@ html, body {
 
 
 .teddyBody{
-	background-image: url("../img/teddyBackground.png");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 20px;
+	height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background: black;
+}
+.teddybg-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 .promBody{
 	background-image: url("../img/promBackground.png");

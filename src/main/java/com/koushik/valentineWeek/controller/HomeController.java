@@ -57,7 +57,11 @@ public class HomeController {
 
     @GetMapping("/teddy")
     public String teddy() {
-        return "redirect:/patience";
+        return "teddy";
+    }
+    @PostMapping("/teddydetails")
+    public String teddydetails() {
+    	return "teddydetails";
     }
 
     @GetMapping("/promise")

@@ -21,7 +21,7 @@
 			src="${pageContext.request.contextPath}/audio/thousand-years.mp3"
 			type="audio/mpeg">
 	</audio>
-	<video id="chocVideo" muted loop playsinline class="chocbg-video">
+	<video id="chocVideo" muted playsinline class="chocbg-video">
 		<source src="${pageContext.request.contextPath}/img/chocolate-vdo.mp4"
 			type="video/mp4">
 	</video>
