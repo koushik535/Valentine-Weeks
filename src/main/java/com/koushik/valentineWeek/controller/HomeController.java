@@ -66,7 +66,11 @@ public class HomeController {
 
     @GetMapping("/promise")
     public String promise() {
-        return "redirect:/patience";
+        return "promise";
+    }
+    @PostMapping("/promdetails")
+    public String promdetails() {
+    	return "promdetails";
     }
 
     @GetMapping("/hug")
