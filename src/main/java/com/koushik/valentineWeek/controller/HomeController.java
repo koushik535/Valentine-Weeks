@@ -75,7 +75,11 @@ public class HomeController {
 
     @GetMapping("/hug")
     public String hug() {
-        return "redirect:/patience";
+        return "hug";
+    }
+    @PostMapping("/hugdetails")
+    public String hugdetails() {
+    	return "hugdetails";
     }
 
     @GetMapping("/kiss")
