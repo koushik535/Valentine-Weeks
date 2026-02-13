@@ -84,7 +84,11 @@ public class HomeController {
 
     @GetMapping("/kiss")
     public String kiss() {
-        return "redirect:/patience";
+        return "kiss";
+    }
+    @PostMapping("/kissdetails")
+    public String kissdetails() {
+    	return "kissdetails";
     }
 
     @GetMapping("/valentine")

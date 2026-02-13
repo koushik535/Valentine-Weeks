@@ -284,15 +284,9 @@ html, body {
 	background-color:black;
 }
 .kissBody{
-	background-image: url("../img/kissBackground.png");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 20px;
+	margin:0px;
+	padding:0px;
+	background-color:black;
 }
 .valBody{
 	background-image: url("../img/valBackground.png");
